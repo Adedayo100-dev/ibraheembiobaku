@@ -132,6 +132,8 @@ textarea{min-height:110px;resize:vertical}
 .out{grid-column:1/-1;background:var(--paper-2);padding:16px;white-space:pre-wrap;font:400 13px/1.5 var(--mono)}
 @media (max-width:860px){.c-info,form{grid-column:1/-1}form{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--ink);padding-block:18px 30px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.credit a{text-decoration:none;border-bottom:1px solid var(--rule);color:var(--ink)}
+.credit a:hover{color:var(--accent);border-color:var(--accent)}
 
 /* Lightbox */
 .lb{position:fixed;inset:0;z-index:50;background:rgba(14,16,19,.96);display:grid;grid-template-columns:1fr minmax(0,340px);gap:24px;padding:calc(env(safe-area-inset-top,0px) + 56px) 24px 24px}
@@ -316,7 +318,7 @@ footer{border-top:1px solid var(--ink);padding-block:18px 30px;display:flex;just
     </form>
   </section>
 
-  <footer><span class="label">© Ibraheem Biobaku · Heemylense</span><span class="label" id="ft-ig"></span></footer>
+  <footer><span class="label">© Ibraheem Biobaku · Heemylense</span><span class="label" id="ft-ig"></span><span class="label credit">Site by <a href="https://taiwoadedayo.net" target="_blank" rel="noopener">Dee-Why</a></span></footer>
 </main>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">

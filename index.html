@@ -303,10 +303,11 @@ footer{border-top:1px solid var(--ink);padding-block:18px 30px;display:flex;just
       <input type="hidden" name="form-name" value="booking">
       <p hidden><label>Leave this empty <input name="bot-field" id="f-bot"></label></p>
       <label><span class="label">Your name</span><input id="f-name" name="name" required autocomplete="name"></label>
-      <label><span class="label">Email or phone</span><input id="f-contact" name="contact" autocomplete="email"></label>
-      <label class="full"><span class="label">What are you booking?</span><select id="f-type" name="package"></select></label>
+      <label><span class="label">Email</span><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email"></label>
+      <label><span class="label">Phone (optional)</span><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></label>
       <label><span class="label">Date</span><input id="f-date" name="date" type="date"></label>
-      <label><span class="label">Location</span><input id="f-loc" name="location" placeholder="City or venue"></label>
+      <label class="full"><span class="label">What are you booking?</span><select id="f-type" name="package"></select></label>
+      <label class="full"><span class="label">Location</span><input id="f-loc" name="location" placeholder="City or venue"></label>
       <label class="full"><span class="label">Tell me about it</span><textarea id="f-msg" name="message" placeholder="The idea, the people, the feeling you want"></textarea></label>
       <label class="full chk"><input type="checkbox" id="f-dep" name="policy_agreed" value="yes"><span>I understand the <b>30% commitment fee is non-refundable</b>, the balance is due 24 hours after the shoot, and rescheduling requires the full amount unless exempted.</span></label>
       <p class="err full" id="f-err" hidden>Tick the box above to confirm you've read the booking policies.</p>
@@ -413,10 +414,10 @@ $('#f').addEventListener('submit',e=>{
   e.preventDefault();
   const v=id=>$('#'+id).value.trim();
   if(!$('#f-dep').checked){$('#f-err').hidden=false;$('#f-dep').focus();return} $('#f-err').hidden=true;
-  const msg=`Hi Ibraheem,\n\nMy name is ${v('f-name')||'[your name]'}${v('f-contact')?' ('+v('f-contact')+')':''}. I'd like to book: ${v('f-type')||'a session'}${v('f-date')?', on '+v('f-date'):''}${v('f-loc')?', in '+v('f-loc'):''}.\n\n${v('f-msg')||''}\n\nI've read the booking policies and understand the 30% commitment fee is non-refundable.\n\nThanks!`;
+  const msg=`Hi Ibraheem,\n\nMy name is ${v('f-name')||'[your name]'}${v('f-email')?' ('+v('f-email')+(v('f-phone')?', '+v('f-phone'):'')+')':''}. I'd like to book: ${v('f-type')||'a session'}${v('f-date')?', on '+v('f-date'):''}${v('f-loc')?', in '+v('f-loc'):''}.\n\n${v('f-msg')||''}\n\nI've read the booking policies and understand the 30% commitment fee is non-refundable.\n\nThanks!`;
   const out=$('#f-out');
   if(window.IB_LIVE_FORM){
-    if(!v('f-name')||!v('f-contact')){$('#f-err').textContent='Add your name and an email or phone number so Ibraheem can reply.';$('#f-err').hidden=false;return}
+    if(!v('f-name')||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('f-email'))){$('#f-err').textContent='Add your name and a valid email address so Ibraheem can reply.';$('#f-err').hidden=false;$('#f-email').focus();return}
     $('#f-go').disabled=true;$('#f-go').textContent='Sending…';
     fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(e.target)).toString()})
      .then(r=>{if(!r.ok)throw 0;out.hidden=false;out.textContent='Thank you. Your enquiry was sent to Ibraheem. He will reply to the email or phone number you gave.';e.target.reset();$('#f-go').textContent='Sent'})

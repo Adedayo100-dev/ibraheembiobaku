@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- PREVIEW MODE: remove the next line on launch day so Google can list the site -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Ibraheem Biobaku (Heemylense) is an Ontario photographer and filmmaker. Weddings, portraits, music videos, brand films and creative direction.">
+<link rel="canonical" href="https://ibraheembiobaku.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ibraheem Biobaku">
+<meta property="og:title" content="Ibraheem Biobaku · Photography, Film & Creative Direction">
+<meta property="og:description" content="Visual storytelling for brands, artists, athletes, creatives, and people with something to say.">
+<meta property="og:url" content="https://ibraheembiobaku.netlify.app/">
+<meta property="og:image" content="https://ibraheembiobaku.netlify.app/media/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#EEF0EC">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Ibraheem Biobaku","alternateName":"Heemylense","description":"Photography, film and creative direction: weddings, portraits, music videos, brand films.","email":"Ibraheembio5@gmail.com","telephone":"+1-365-889-7815","areaServed":"Ontario, Canada","url":"https://ibraheembiobaku.netlify.app/","image":"https://ibraheembiobaku.netlify.app/media/og.jpg","sameAs":["https://www.instagram.com/ibraheembio/","https://www.instagram.com/ibraheembi0/"],"priceRange":"$275 - $4,500+"}</script>
+<script>window.IB_LIVE_FORM=true;</script>
+<title>Ibraheem Biobaku</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Jost:wght@300;400;500&family=DM+Mono:wght@400&display=swap">
+<style>
+/* Layout: a printed photo journal. Masthead, chapter spreads that alternate sides, film frame numbers as captions. Committed light look. */
+:root{
+  --paper:#EEF0EC; --paper-2:#E3E6E0; --ink:#15191E; --ink-2:#4B535C; --rule:#C9CEC6;
+  --accent:#1F3A5F;
+  --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --body:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+  --gut:clamp(16px,4vw,56px);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:300 17px/1.65 var(--body);padding-inline:var(--gut);padding-block:0;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1320px;margin-inline:auto}
+.label{font:400 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+
+/* Nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);margin-inline:calc(var(--gut)*-1);padding-inline:var(--gut)}
+.nav .mark{font:italic 600 22px/1 var(--display);text-decoration:none;letter-spacing:-.01em}
+.nav ul{display:flex;gap:clamp(14px,2.4vw,32px);list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font:400 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.nav ul a:hover{color:var(--accent)}
+@media (max-width:640px){.nav ul li.hide-s{display:none}}
+
+/* Masthead */
+.mast{padding-block:clamp(36px,7vw,90px) 28px;display:grid;gap:18px}
+.mast .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.mast h1{margin:0;font:italic 500 clamp(58px,14vw,210px)/.86 var(--display);letter-spacing:-.045em;text-wrap:balance}
+.mast h1 span{font-style:normal;font-weight:400;display:inline-block;padding-left:.55em}
+@media (max-width:640px){.mast h1 span{padding-left:0}}
+.mast .sub{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:end}
+.mast .sub p{margin:0;max-width:34ch;font-size:clamp(18px,2vw,22px);line-height:1.45}
+.mast .sub .label{text-align:right}
+@media (max-width:640px){.mast .sub{grid-template-columns:1fr}.mast .sub .label{text-align:left}}
+
+/* Cover */
+.cover{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(10px,1.6vw,22px);padding-block:12px 70px}
+.cover figure{margin:0;position:relative;overflow:hidden;cursor:zoom-in;background:var(--paper-2)}
+.cover figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.1,1)}
+.cover figure:hover img{transform:scale(1.035)}
+.cover .a{grid-column:1/8;grid-row:1/3;aspect-ratio:4/5}
+.cover .b{grid-column:8/13;grid-row:1;aspect-ratio:5/4}
+.cover .c{grid-column:10/13;grid-row:2;aspect-ratio:3/4;align-self:end}
+.cover .note{grid-column:8/10;grid-row:2;align-self:end;display:grid;gap:8px;min-width:0}
+.cover .note p{margin:0;font:italic 400 clamp(16px,1.5vw,20px)/1.35 var(--display)}
+.cover figcaption{position:absolute;left:10px;bottom:8px;font:400 10px/1 var(--mono);letter-spacing:.12em;color:#fff;mix-blend-mode:difference}
+@media (max-width:760px){.cover .a{grid-column:1/13;grid-row:auto}.cover .b{grid-column:1/8;grid-row:auto;aspect-ratio:4/5}.cover .c{grid-column:8/13;grid-row:auto}.cover .note{grid-column:1/13;grid-row:auto}}
+.credits{font:400 11px/1.6 var(--mono);letter-spacing:.06em;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:10px;margin:0 0 14px;max-width:44ch}
+
+/* Contents */
+.contents{border-top:1px solid var(--ink);padding-block:28px 80px;display:grid;grid-template-columns:240px 1fr;gap:24px}
+.contents ol{list-style:none;margin:0;padding:0;columns:2;column-gap:40px}
+.contents li{break-inside:avoid;border-bottom:1px solid var(--rule)}
+.contents li a{display:flex;justify-content:space-between;gap:12px;padding-block:12px;text-decoration:none;align-items:baseline}
+.contents li a b{font:italic 400 clamp(22px,2.4vw,30px)/1.1 var(--display)}
+.contents li a:hover b{color:var(--accent)}
+@media (max-width:760px){.contents{grid-template-columns:1fr}.contents ol{columns:1}}
+
+/* Chapter */
+.chapter{padding-block:clamp(50px,8vw,110px);border-top:1px solid var(--ink);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,2vw,28px);scroll-margin-top:60px}
+.ch-head{grid-column:1/-1;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline;margin-bottom:clamp(10px,2vw,24px)}
+.ch-head h2{margin:0;font:italic 500 clamp(44px,7.5vw,112px)/.9 var(--display);letter-spacing:-.035em;text-wrap:balance}
+.ch-lead{grid-column:1/8;margin:0;cursor:zoom-in;position:relative}
+.ch-lead img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ch-text{grid-column:9/13;align-self:end;min-width:0}
+.ch-text p{margin:0 0 18px;max-width:38ch}
+.ch-text p::first-letter{float:left;font:500 4.1em/.78 var(--display);padding:6px 10px 0 0;color:var(--accent)}
+.ch-strip{grid-column:1/-1;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(200px,1fr);gap:clamp(10px,1.6vw,22px);overflow-x:auto;padding-bottom:6px;margin-top:clamp(10px,2vw,24px);scrollbar-width:thin}
+.ch-strip figure{margin:0;cursor:zoom-in}
+.ch-strip img,.ch-strip video{width:100%;height:clamp(260px,32vw,440px);object-fit:cover;background:var(--paper-2)}
+.ch-strip figcaption{margin-top:8px}
+.chapter.flip .ch-lead{grid-column:6/13;grid-row:2}
+.chapter.flip .ch-text{grid-column:1/5;grid-row:2}
+@media (max-width:860px){.ch-lead,.chapter.flip .ch-lead{grid-column:1/-1;grid-row:auto}.ch-text,.chapter.flip .ch-text{grid-column:1/-1;grid-row:auto}}
+.vid{position:relative}
+.vid .snd{position:absolute;right:8px;bottom:8px;background:rgba(21,25,30,.72);color:#fff;border:0;border-radius:99px;padding:6px 12px;font:400 10px/1 var(--mono);letter-spacing:.12em;cursor:pointer}
+
+/* Services */
+.services{border-top:1px solid var(--ink);padding-block:clamp(50px,8vw,110px);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.services h2,.contact h2{grid-column:1/-1;margin:0 0 12px;font:italic 500 clamp(40px,6vw,88px)/.95 var(--display);letter-spacing:-.03em}
+.svc{grid-column:span 6;border-top:1px solid var(--rule);padding-top:16px;display:grid;grid-template-columns:1fr auto;gap:6px 16px}
+.svc h3{margin:0;font:400 clamp(24px,2.4vw,32px)/1.15 var(--display)}
+.svc p{grid-column:1/-1;margin:0;max-width:52ch;color:var(--ink-2)}
+@media (max-width:760px){.svc{grid-column:1/-1}}
+
+/* Contact */
+.contact{border-top:1px solid var(--ink);padding-block:clamp(50px,8vw,110px) 40px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.c-info{grid-column:1/6;display:grid;gap:22px;align-content:start}
+.c-line{display:grid;gap:4px}
+.c-line .v{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font:400 clamp(20px,2vw,26px)/1.2 var(--display);word-break:break-word}
+.copy{border:1px solid var(--ink);background:none;border-radius:99px;padding:4px 10px;font:400 10px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.copy:hover{background:var(--ink);color:var(--paper)}
+form{grid-column:7/13;display:grid;grid-template-columns:1fr 1fr;gap:18px;min-width:0}
+form .full{grid-column:1/-1}
+label{display:grid;gap:6px}
+input,select,textarea{font:400 16px/1.4 var(--body);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink);padding:8px 0;border-radius:0;width:100%}
+textarea{min-height:110px;resize:vertical}
+.send{justify-self:start;background:var(--ink);color:var(--paper);border:0;padding:14px 26px;font:400 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;cursor:pointer}
+.send:hover{background:var(--accent)}
+.out{grid-column:1/-1;background:var(--paper-2);padding:16px;white-space:pre-wrap;font:400 13px/1.5 var(--mono)}
+@media (max-width:860px){.c-info,form{grid-column:1/-1}form{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--ink);padding-block:18px 30px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(14,16,19,.96);display:grid;grid-template-columns:1fr minmax(0,340px);gap:24px;padding:calc(env(safe-area-inset-top,0px) + 56px) 24px 24px}
+.lb[hidden]{display:none}
+.lb .stage{display:flex;align-items:center;justify-content:center;min-height:0;min-width:0}
+.lb .stage img,.lb .stage video{max-height:calc(100dvh - 110px);width:auto;max-width:100%;object-fit:contain}
+.lb aside{color:#E9ECE6;align-self:center;min-width:0}
+.lb aside h3{font:italic 500 38px/1 var(--display);margin:6px 0 14px}
+.lb aside p{white-space:pre-line;font-size:15px;color:#BFC6BE;max-width:44ch}
+.lb aside .label{color:#9AA39A}
+.lb .x,.lb .nv{position:absolute;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:99px;cursor:pointer;font:400 11px/1 var(--mono);letter-spacing:.14em;padding:10px 14px}
+.lb .x{top:calc(env(safe-area-inset-top,0px) + 12px);right:16px}
+.lb .prev{top:calc(env(safe-area-inset-top,0px) + 12px);left:16px}
+.lb .next{top:calc(env(safe-area-inset-top,0px) + 12px);left:96px}
+@media (max-width:860px){.lb{grid-template-columns:1fr;grid-template-rows:1fr auto;overflow:auto}.lb aside p{display:none}.lb .stage img,.lb .stage video{max-height:68dvh}}
+
+/* Worked with */
+.worked{border-top:1px solid var(--ink);padding-block:28px 34px;display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:baseline}
+.ww{margin:0;font:italic 400 clamp(28px,3.6vw,52px)/1.15 var(--display);letter-spacing:-.02em;text-wrap:balance}
+.ww i{font-style:normal;color:var(--accent);padding-inline:.3em}
+.ww em{color:var(--ink-2);font-size:.6em}
+@media (max-width:760px){.worked{grid-template-columns:1fr;gap:10px}}
+/* Rates */
+.rates{border-top:1px solid var(--ink);padding-block:clamp(50px,8vw,110px) 40px;scroll-margin-top:60px}
+.rt-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.rt-head h2,.policies h2{margin:0;font:italic 500 clamp(44px,7vw,104px)/.9 var(--display);letter-spacing:-.035em}
+.rt-head p{margin:0;color:var(--ink-2);max-width:34ch}
+.tabs{display:flex;gap:4px 22px;flex-wrap:wrap;border-bottom:1px solid var(--rule);margin-bottom:28px}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:12px 0;margin-bottom:-1px;font:400 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;color:var(--ink-2)}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tabs button:hover{color:var(--ink)}
+.panel .intro{margin:0 0 26px;max-width:56ch;font-size:clamp(18px,1.6vw,21px)}
+.grp{margin-bottom:46px}
+.grp h3{margin:0 0 16px;font:italic 400 clamp(26px,2.8vw,38px)/1 var(--display)}
+.pks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(14px,2vw,28px)}
+.pk{position:relative;border-top:1px solid var(--ink);padding-top:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.pk h4{margin:0;font:500 clamp(22px,2vw,28px)/1.1 var(--display)}
+.pk .price{display:flex;flex-direction:column;gap:2px}
+.pk .amt{font:400 clamp(40px,4vw,56px)/1 var(--display);letter-spacing:-.03em;font-variant-numeric:lining-nums}
+.pk .amt small{font:400 .38em/1 var(--body);letter-spacing:0;margin-left:4px;color:var(--ink-2)}
+.pk p{margin:0;color:var(--ink-2);font-size:15px;max-width:44ch}
+.pk ul{list-style:none;margin:4px 0 0;padding:0;font-size:15px}
+.pk li{padding:7px 0;border-bottom:1px solid var(--rule)}
+.pk .book{margin-top:auto;align-self:flex-start;background:none;border:0;border-bottom:1px solid var(--ink);padding:10px 0 4px;font:400 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.pk .book:hover{color:var(--accent);border-color:var(--accent)}
+.pk.pop{background:var(--paper-2);padding:16px 16px 18px;border-top:3px solid var(--accent)}
+.pk .tag{align-self:flex-start;background:var(--accent);color:var(--paper);font:400 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:6px 9px}
+.feature .pks{grid-template-columns:1fr}
+.feature .pk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:10px 40px;background:var(--ink);color:var(--paper);padding:clamp(20px,3vw,40px);border:0}
+.feature .pk>*{grid-column:1}
+.feature .pk ul{grid-column:2;grid-row:1/span 6;columns:2;column-gap:28px;align-self:start}
+.feature .pk li{border-color:rgba(238,240,236,.18);break-inside:avoid}
+.feature .pk p,.feature .pk .label,.feature .pk .amt small{color:#B9C0C8}
+.feature .pk .book{border-color:var(--paper);color:var(--paper)}
+@media (max-width:860px){.feature .pk{grid-template-columns:1fr}.feature .pk ul{grid-column:1;grid-row:auto;columns:1}}
+.addons{margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 40px}
+.addons div{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.addons dt{font-size:16px}.addons dd{margin:0;font:400 20px/1.2 var(--display);white-space:nowrap}
+/* Policies */
+.policies{border-top:1px solid var(--ink);padding-block:clamp(50px,8vw,100px);display:grid;grid-template-columns:repeat(12,1fr);gap:24px;scroll-margin-top:60px}
+.po-big{grid-column:1/5;display:grid;gap:8px;align-content:start}
+.po-big b{padding-left:.06em;font:italic 500 clamp(96px,14vw,210px)/.8 var(--display);color:var(--accent);letter-spacing:-.05em}
+.po-list{grid-column:6/13;min-width:0}
+.po-list h2{margin-bottom:20px}
+.po-list dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.po-list dl div{border-top:1px solid var(--rule);padding:14px 0 18px;display:grid;gap:6px}
+.po-list dd{margin:0}
+@media (max-width:860px){.po-big,.po-list{grid-column:1/-1}.po-list dl{grid-template-columns:1fr}}
+/* About */
+.about{border-top:1px solid var(--ink);padding-block:clamp(50px,8vw,110px);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(12px,2vw,28px);scroll-margin-top:60px}
+.portrait{grid-column:1/6;margin:0;position:relative;aspect-ratio:4/5;background:var(--paper-2);overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.ph-empty{position:absolute;inset:14px;border:1px dashed var(--accent);display:grid;place-items:center;text-align:center;padding:20px}
+.ph-empty .inner{display:grid;gap:12px;justify-items:center}
+.ph-empty b{font:italic 500 clamp(30px,3.4vw,48px)/1 var(--display);color:var(--ink)}
+.ph-empty .ring{width:70px;height:70px;border:1px solid var(--accent);border-radius:50%;display:grid;place-items:center;color:var(--accent);font:400 10px/1 var(--mono);letter-spacing:.12em}
+.ab-text{grid-column:7/13;display:grid;gap:18px;align-content:start;min-width:0}
+.ab-text h2{margin:0;font:italic 500 clamp(44px,6vw,92px)/.92 var(--display);letter-spacing:-.03em}
+.ab-p{margin:0;font-size:clamp(18px,1.7vw,21px);max-width:40ch}
+.bts{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,1.6vw,22px);margin-top:8px}
+.bts figure{margin:0;cursor:zoom-in}
+.bts img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.bts figcaption{margin-top:8px}
+@media (max-width:860px){.portrait,.ab-text{grid-column:1/-1}}
+/* Terms */
+.terms{grid-column:1/-1;margin-top:20px;display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,3vw,44px);align-items:center;background:var(--paper-2);border-left:3px solid var(--accent);padding:clamp(20px,3vw,36px)}
+.terms>b{font:italic 500 clamp(72px,10vw,150px)/.8 var(--display);color:var(--accent);letter-spacing:-.04em}
+.terms h3{margin:6px 0 8px;font:400 clamp(24px,2.6vw,34px)/1.1 var(--display)}
+.terms p{margin:0;max-width:52ch;color:var(--ink-2)}
+@media (max-width:560px){.terms{grid-template-columns:1fr}}
+.chk{display:flex!important;gap:12px;align-items:flex-start;background:var(--paper-2);padding:14px}
+.chk input{width:18px;height:18px;flex:0 0 auto;margin-top:3px;accent-color:var(--accent);padding:0;border:0}
+.err{margin:0;color:#8A1C1C;font:400 12px/1.4 var(--mono)}
+.reveal{animation:rise 1s cubic-bezier(.2,.7,.1,1) both}
+@keyframes rise{from{opacity:.001;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Main">
+  <a class="mark" href="#top">Ibraheem Biobaku</a>
+  <ul>
+    <li><a href="#contents">Stories</a></li>
+    <li class="hide-s"><a href="#about">About</a></li>
+    <li><a href="#rates">Rates</a></li>
+    <li><a href="#contact">Book</a></li>
+  </ul>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="mast">
+    <div class="row"><span class="label"><span id="m-studio"></span> · <span id="m-base"></span></span><span class="label" id="m-disc"></span></div>
+    <h1 class="reveal">Ibraheem<br><span>Biobaku</span></h1>
+    <div class="sub">
+      <p id="m-tag"></p>
+      <span class="label" id="m-count"></span>
+    </div>
+  </header>
+
+  <section class="cover" aria-label="Featured photographs">
+    <figure class="a reveal" data-open="p16"><img src="media/p16.webp" alt="" id="cv-a"><figcaption>FR. 16</figcaption></figure>
+    <figure class="b reveal" style="animation-delay:.12s" data-open="p10"><img src="media/p10-s.webp" alt="" id="cv-b"><figcaption>FR. 10</figcaption></figure>
+    <div class="note"><span class="label">Photographer &amp; director</span><p>Ibraheem Biobaku makes pictures that feel like the middle of a story.</p></div>
+    <figure class="c reveal" style="animation-delay:.24s" data-open="p09"><img src="media/p09-s.webp" alt="" id="cv-c"><figcaption>FR. 09</figcaption></figure>
+  </section>
+
+  <section class="worked" aria-labelledby="ww-h">
+    <span class="label" id="ww-h">Worked with</span>
+    <p class="ww" id="ww"></p>
+  </section>
+
+  <section class="contents" id="contents" aria-labelledby="ct-h">
+    <div><span class="label" id="ct-h">In this journal</span><p style="max-width:26ch;margin-top:10px">Every photograph comes with the story behind it. Pick a chapter or keep scrolling.</p></div>
+    <ol id="toc"></ol>
+  </section>
+
+  <div id="chapters"></div>
+
+  <section class="about" id="about" aria-labelledby="ab-h">
+    <figure class="portrait" id="portrait"></figure>
+    <div class="ab-text">
+      <span class="label">About · <span id="ab-base"></span></span>
+      <h2 id="ab-h">Behind the camera</h2>
+      <p class="ab-p" id="ab-p"></p>
+      <div class="bts" id="bts"></div>
+    </div>
+  </section>
+
+  <section class="rates" id="rates" aria-labelledby="rt-h">
+    <div class="rt-head"><h2 id="rt-h">Rates</h2><p>Starting rates in Canadian dollars. All prices are subject to HST.</p></div>
+    <div class="tabs" role="tablist" aria-label="Rate categories" id="tabs"></div>
+    <div id="panels"></div>
+  </section>
+
+  <section class="policies" id="policies" aria-labelledby="po-h">
+    <div class="po-big"><b>30%</b><span class="label">Non-refundable commitment fee</span></div>
+    <div class="po-list">
+      <h2 id="po-h">Booking &amp; policies</h2>
+      <dl id="pol"></dl>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Book a session</h2>
+    <div class="c-info" id="cinfo"></div>
+    <form id="f" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="booking">
+      <p hidden><label>Leave this empty <input name="bot-field" id="f-bot"></label></p>
+      <label><span class="label">Your name</span><input id="f-name" name="name" required autocomplete="name"></label>
+      <label><span class="label">Email or phone</span><input id="f-contact" name="contact" autocomplete="email"></label>
+      <label class="full"><span class="label">What are you booking?</span><select id="f-type" name="package"></select></label>
+      <label><span class="label">Date</span><input id="f-date" name="date" type="date"></label>
+      <label><span class="label">Location</span><input id="f-loc" name="location" placeholder="City or venue"></label>
+      <label class="full"><span class="label">Tell me about it</span><textarea id="f-msg" name="message" placeholder="The idea, the people, the feeling you want"></textarea></label>
+      <label class="full chk"><input type="checkbox" id="f-dep" name="policy_agreed" value="yes"><span>I understand the <b>30% commitment fee is non-refundable</b>, the balance is due 24 hours after the shoot, and rescheduling requires the full amount unless exempted.</span></label>
+      <p class="err full" id="f-err" hidden>Tick the box above to confirm you've read the booking policies.</p>
+      <button class="send" type="submit" id="f-go">Prepare enquiry</button>
+      <div class="out" id="f-out" hidden></div>
+    </form>
+  </section>
+
+  <footer><span class="label">© Ibraheem Biobaku · Heemylense</span><span class="label" id="ft-ig"></span></footer>
+</main>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="nv prev" id="lb-prev" aria-label="Previous">← Prev</button>
+  <button class="nv next" id="lb-next" aria-label="Next">Next →</button>
+  <button class="x" id="lb-x" aria-label="Close">Close ✕</button>
+  <div class="stage" id="lb-stage"></div>
+  <aside><span class="label" id="lb-k"></span><h3 id="lb-t"></h3><p id="lb-s"></p><span class="label" id="lb-n"></span></aside>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+const D=window.IB, $=s=>document.querySelector(s);
+const pad=n=>String(n).padStart(2,'0');
+$('#m-base').textContent='Based in '+D.base; $('#m-studio').textContent=D.studio; $('#m-disc').textContent=D.discipline;
+$('#ww').innerHTML=D.workedWith.map(n=>`<span>${n}</span>`).join('<i>·</i>')+'<i>·</i><em>&amp; more</em>';
+$('#ab-base').textContent=D.base; $('#ab-p').textContent=D.about;
+$('#portrait').innerHTML=D.portrait?`<img src="${D.portrait}" alt="Portrait of Ibraheem Biobaku">`
+ :`<div class="ph-empty"><div class="inner"><span class="ring">4 : 5</span><b>Portrait<br>coming soon</b><span class="label">Ibraheem's portrait goes here</span></div></div>`;
+$('#bts').innerHTML=D.behindTheScenes.map(b=>`<figure data-open="${b.id}"><img loading="lazy" src="media/${b.id}-s.webp" alt="${b.alt}"><figcaption class="label">${b.caption}</figcaption></figure>`).join('');
+$('#m-tag').textContent=D.tagline;
+const nP=D.series.reduce((a,s)=>a+s.photos.length,0), nV=D.series.reduce((a,s)=>a+s.videos.length,0);
+$('#m-count').textContent=D.series.length+' stories · '+nP+' frames · '+nV+' films';
+['a','b','c'].forEach((k,i)=>{const id=['p16','p10','p09'][i];$('#cv-'+k).alt=D.photos[id].alt});
+
+// Build sequence for lightbox
+const seq=[];
+D.series.forEach(s=>{s.photos.forEach(p=>seq.push({t:'p',id:p,s})); s.videos.forEach(v=>seq.push({t:'v',id:v,s}))});
+const ABOUT={title:'Behind the camera',category:'About',story:D.about};
+D.behindTheScenes.forEach(b=>seq.push({t:'p',id:b.id,s:ABOUT,alt:b.alt}));
+const idx=id=>seq.findIndex(x=>x.id===id);
+
+// TOC + chapters
+const toc=$('#toc'), ch=$('#chapters');
+D.series.forEach((s,i)=>{
+  toc.insertAdjacentHTML('beforeend',`<li><a href="#${s.id}"><b>${s.title}</b><span class="label">${s.category} · ${s.photos.length+s.videos.length} frames</span></a></li>`);
+  const rest=s.photos.filter(p=>p!==s.lead);
+  const strip=rest.map(p=>`<figure data-open="${p}"><img loading="lazy" src="media/${p}-s.webp" alt="${D.photos[p].alt}"><figcaption class="label">Fr. ${p.slice(1)}</figcaption></figure>`).join('')
+   + s.videos.map(v=>`<figure class="vid" data-open="${v}"><video muted loop playsinline preload="metadata" poster="media/${v}.webp" src="media/${v}.mp4"></video><button class="snd" type="button" data-snd>SOUND OFF</button><figcaption class="label">Film · ${D.videos[v].title}</figcaption></figure>`).join('');
+  ch.insertAdjacentHTML('beforeend',`<article class="chapter ${i%2?'flip':''}" id="${s.id}">
+    <header class="ch-head"><h2>${s.title}</h2><span class="label">${s.category} · ${s.season}</span></header>
+    <figure class="ch-lead" data-open="${s.lead}"><img loading="lazy" src="media/${s.lead}.webp" alt="${D.photos[s.lead].alt}"></figure>
+    <div class="ch-text"><span class="label">The story</span><p style="margin-top:12px">${s.story}</p>${s.credits?`<p class="credits">${s.credits}</p>`:''}<span class="label">Lead frame · Fr. ${s.lead.slice(1)}</span></div>
+    <div class="ch-strip">${strip}</div>
+  </article>`);
+});
+
+// Rates
+const money=p=>`${p.from?'<span class="label">Starting at</span>':''}<span class="amt">${p.price}${p.per?`<small>${p.per}</small>`:''}</span>${/^\$/.test(p.price)?'<span class="label">+ HST</span>':''}`;
+const card=(p,tab)=>`<article class="pk${p.popular?' pop':''}">
+  ${p.popular?'<span class="tag">Most popular</span>':''}
+  <h4>${p.name}</h4>
+  <div class="price">${money(p)}</div>
+  ${p.hours?`<span class="label">${p.hours}</span>`:''}
+  ${p.blurb?`<p>${p.blurb}</p>`:''}
+  ${p.items.length?`<ul>${p.items.map(i=>`<li>${i}</li>`).join('')}</ul>`:''}
+  <button class="book" type="button" data-book="${tab} — ${p.name}">Book this →</button>
+</article>`;
+$('#tabs').innerHTML=D.rates.map((r,i)=>`<button role="tab" type="button" id="tab-${r.id}" aria-controls="pn-${r.id}" aria-selected="${i===0}" data-tab="${r.id}">${r.tab}</button>`).join('');
+$('#panels').innerHTML=D.rates.map((r,i)=>`<div class="panel" role="tabpanel" id="pn-${r.id}" aria-labelledby="tab-${r.id}" ${i?'hidden':''}>
+  <p class="intro">${r.intro}</p>
+  ${r.groups.map(g=>`<div class="grp${g.feature?' feature':''}">${g.name?`<h3>${g.name}</h3>`:''}<div class="pks">${g.packages.map(p=>card(p,g.name||r.tab)).join('')}</div></div>`).join('')}
+  ${r.addons?`<div class="grp"><h3>Add-ons</h3><dl class="addons">${r.addons.map(a=>`<div><dt>${a[0]}</dt><dd>${a[1]}</dd></div>`).join('')}</dl></div>`:''}
+</div>`).join('');
+$('#tabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;
+  document.querySelectorAll('#tabs [role=tab]').forEach(t=>t.setAttribute('aria-selected',t===b));
+  document.querySelectorAll('#panels .panel').forEach(pn=>pn.hidden=pn.id!=='pn-'+b.dataset.tab)});
+$('#tabs').addEventListener('keydown',e=>{if(!/Arrow(Left|Right)/.test(e.key))return;const t=[...document.querySelectorAll('#tabs [role=tab]')];let i=t.findIndex(x=>x.getAttribute('aria-selected')==='true');i=(i+(e.key==='ArrowRight'?1:-1)+t.length)%t.length;t[i].click();t[i].focus()});
+$('#pol').innerHTML=D.policies.map(x=>`<div><dt class="label">${x.k}</dt><dd>${x.v}</dd></div>`).join('');
+// Booking select
+$('#f-type').innerHTML='<option value="">Choose a package or service</option>'+D.rates.map(r=>r.groups.map(g=>`<optgroup label="${g.name||r.tab}">${g.packages.map(p=>`<option>${(g.name||r.tab)} — ${p.name}</option>`).join('')}</optgroup>`).join('')).join('')+'<optgroup label="Other"><option>Something else</option></optgroup>';
+document.addEventListener('click',e=>{const b=e.target.closest('[data-book]');if(!b)return;$('#f-type').value=b.dataset.book;$('#contact').scrollIntoView({behavior:'smooth'});setTimeout(()=>$('#f-name').focus({preventScroll:true}),600)});
+
+// Contact
+const ig=D.instagram.map(i=>`<a href="${i.url}" target="_blank" rel="noopener">${i.handle}</a>`).join(' &nbsp;·&nbsp; ');
+$('#cinfo').innerHTML=`
+ <div class="c-line"><span class="label">Email</span><span class="v"><a href="mailto:${D.email}" id="em">${D.email}</a><button class="copy" type="button" data-copy="${D.email}">Copy</button></span></div>
+ <div class="c-line"><span class="label">Phone / text</span><span class="v"><a href="tel:${D.phoneRaw}">${D.phone}</a><button class="copy" type="button" data-copy="${D.phone}">Copy</button></span></div>
+ <div class="c-line"><span class="label">Instagram</span><span class="v">${ig}</span></div>
+ <div class="c-line"><span class="label">Based in</span><span class="v">${D.base}</span></div>`;
+$('#ft-ig').innerHTML=ig;
+
+document.addEventListener('click',e=>{
+  const c=e.target.closest('[data-copy]');
+  if(c){const t=c.dataset.copy;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{c.textContent='Copied'},()=>{c.textContent='Select text'});setTimeout(()=>c.textContent='Copy',1800);return}
+  const s=e.target.closest('[data-snd]');
+  if(s){e.stopPropagation();const v=s.parentElement.querySelector('video');v.muted=!v.muted;if(!v.muted)v.play().catch(()=>{});s.textContent=v.muted?'SOUND OFF':'SOUND ON';return}
+  const o=e.target.closest('[data-open]');
+  if(o) open(idx(o.dataset.open));
+});
+
+// Form
+$('#f').addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=id=>$('#'+id).value.trim();
+  if(!$('#f-dep').checked){$('#f-err').hidden=false;$('#f-dep').focus();return} $('#f-err').hidden=true;
+  const msg=`Hi Ibraheem,\n\nMy name is ${v('f-name')||'[your name]'}${v('f-contact')?' ('+v('f-contact')+')':''}. I'd like to book: ${v('f-type')||'a session'}${v('f-date')?', on '+v('f-date'):''}${v('f-loc')?', in '+v('f-loc'):''}.\n\n${v('f-msg')||''}\n\nI've read the booking policies and understand the 30% commitment fee is non-refundable.\n\nThanks!`;
+  const out=$('#f-out');
+  if(window.IB_LIVE_FORM){
+    if(!v('f-name')||!v('f-contact')){$('#f-err').textContent='Add your name and an email or phone number so Ibraheem can reply.';$('#f-err').hidden=false;return}
+    $('#f-go').disabled=true;$('#f-go').textContent='Sending…';
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(e.target)).toString()})
+     .then(r=>{if(!r.ok)throw 0;out.hidden=false;out.textContent='Thank you. Your enquiry was sent to Ibraheem. He will reply to the email or phone number you gave.';e.target.reset();$('#f-go').textContent='Sent'})
+     .catch(()=>{$('#f-go').disabled=false;$('#f-go').textContent='Send enquiry';out.hidden=false;out.textContent=`That didn't go through. Please send this to ${D.email} or text ${D.phone}.\n\n`+msg});
+    return}
+  out.hidden=false;
+  out.textContent=`Your enquiry is ready. Copy it and send it to ${D.email} or text ${D.phone}.\n\n`+msg;
+  out.insertAdjacentHTML('beforeend','<br><br><button class="copy" type="button" id="cpmsg">Copy message</button>');
+  $('#cpmsg').dataset.copy=msg;
+});
+
+// Inline videos play when visible
+const io=new IntersectionObserver(es=>es.forEach(en=>{const v=en.target;if(en.isIntersecting)v.play().catch(()=>{});else v.pause()}),{threshold:.35});
+document.querySelectorAll('.ch-strip video').forEach(v=>io.observe(v));
+
+// Lightbox
+const lb=$('#lb'), st=$('#lb-stage'); let cur=0;
+function open(i){if(i<0)return;cur=(i+seq.length)%seq.length;const it=seq[cur];
+  st.innerHTML=it.t==='p'?`<img src="media/${it.id}.webp" alt="${it.alt||D.photos[it.id].alt}">`:`<video src="media/${it.id}.mp4" poster="media/${it.id}.webp" controls autoplay playsinline></video>`;
+  $('#lb-k').textContent=it.s.category+' · '+(it.alt?'On set':it.t==='p'?'Fr. '+it.id.slice(1):'Film');
+  $('#lb-t').textContent=it.s.title; $('#lb-s').textContent=it.s.story+(it.s.credits?'\n\n'+it.s.credits:'');
+  $('#lb-n').textContent=pad(cur+1)+' / '+pad(seq.length);
+  lb.hidden=false; document.body.style.overflow='hidden'; $('#lb-x').focus();}
+function close(){lb.hidden=true;st.innerHTML='';document.body.style.overflow=''}
+$('#lb-x').onclick=close; $('#lb-prev').onclick=()=>open(cur-1); $('#lb-next').onclick=()=>open(cur+1);
+lb.addEventListener('click',e=>{if(e.target===lb||e.target===st)close()});
+addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')open(cur+1);if(e.key==='ArrowLeft')open(cur-1)});
+let sx=null;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+lb.addEventListener('touchend',e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)open(cur+(dx<0?1:-1));sx=null});
+})();
+</script>
+
+</body>
+</html>

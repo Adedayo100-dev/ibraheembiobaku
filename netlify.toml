@@ -1,0 +1,26 @@
+# Netlify settings for ibraheembiobaku.netlify.app
+# Static site: no build step. Netlify publishes this folder as-is.
+
+[build]
+  publish = "."
+
+# Security headers for every page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Photos and videos rarely change: let browsers keep them for 30 days
+[[headers]]
+  for = "/media/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# Text content changes often: always check for a newer copy
+[[headers]]
+  for = "/data.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
